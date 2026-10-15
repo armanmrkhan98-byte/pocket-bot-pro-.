@@ -1,7 +1,8 @@
-services:
+
+    services:
   - type: web
     name: pocket-bot-python
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install fastapi uvicorn numpy ta-lib
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     
